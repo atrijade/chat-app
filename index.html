@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="images/logo.png" alt="ChatApp Logo">
+    </nav>
+    <div class="container">
+        <div class="message right">
+            <strong>Atri:</strong> Hello, this is Atri
+        </div>
+        <div class="message left">
+            <strong>Ashray:</strong> Hello, this is Ashray
+        </div>
+    </div>
+    <div class="send">
+        <form id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type a message..." required>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <audio id="myAudio" src="js/ting.mp3"></audio>
+    <button id="enableAudio">Enable Audio</button>
+    </body>
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <script src="js/client.js" defer></script>
+</body>
+
+</html>
